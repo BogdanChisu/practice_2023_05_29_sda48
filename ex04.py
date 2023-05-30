@@ -4,8 +4,6 @@ try-except.
 """
 try:
     with open('readme.txt', 'r') as f:
-        linesx = f.readlines()
-        for line in linesx:
-            print(line)
+        print("File found!")
 except FileNotFoundError:
     print("File doesn't exist!")
